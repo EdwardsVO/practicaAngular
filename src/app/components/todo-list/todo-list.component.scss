@@ -1,0 +1,41 @@
+
+*{
+    font-family:'Courier New', Courier, monospace;
+}
+li{
+    list-style:decimal;
+
+}
+
+hr{
+    width: 97%;
+}
+.empty{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inTask{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 100px 15px 0px;
+}
+.description-task{
+    width: 100%;
+}
+
+h2{
+    display: flex;
+    align-content: center;
+}
+
+.taskContainerOff{
+    display: none;
+    width: 100%;
+}
+
+.taskContainerOn{
+    width: 100%;
+    display: flex;
+}

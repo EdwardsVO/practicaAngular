@@ -1,0 +1,11 @@
+    <div class="header">
+        <div class="intro">
+            <h1>TASK MANAGER</h1>
+            <input type="text" name="" id="input-text" placeholder="Enter Task" (keyup.enter)="addTaskNumber()" [(ngModel)]= "taskIn">
+        </div>
+        <div class="statistics">
+            <app-results [taskToDo] = "task" [taskCompleted] = "taskCompleted"></app-results>
+        </div>
+    </div>
+    <hr>
+    <app-todo-list  [taskBlock] = "tasks" [emptyList] = "emptyList" [index] = "task" (taskCompleted)="refreshCompleted($event)"></app-todo-list>

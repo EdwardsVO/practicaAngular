@@ -1,0 +1,17 @@
+
+<div class="empty">
+    <h2 [style.display] = "emptyList ? 'flex': 'none'"> The work list is empty!</h2>
+</div>
+<div class="taskContainerOff" [class.taskContainerOn] = "!emptyList">
+    <div class="description-task" id="taskID">
+       <ul>
+           <li class="tarea" *ngFor="let note of taskBlock"> 
+                <div class="inTask"> 
+                    <div>{{note}}</div><div><button (click) = "deleteTask(note)">Done</button>
+                </div>
+                </div> <hr> </li>
+        </ul>
+    </div>
+        
+</div>
+    
